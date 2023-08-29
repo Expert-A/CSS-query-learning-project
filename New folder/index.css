@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    margin: 0;
+ padding: 0; 
+ width: 100%;
+}
+
+
+.img-container1 {
+    background-image: url("/Test 1/images/banner.jpg");
+    width: 100%; 
+ margin: 0;
+    height: 700px; 
+  }
+
+  @media(max-width: 768px){
+    .img-container1 {
+        background-image: url("/Test 1/images/banner.jpg");
+        width: 100%; 
+        
+        height: 300px; 
+      }
+ } 
+
+
+  
+/* .img-container1 img { */
+   
+ 
+  /* } */
+
+  .img-container2 {
+
+    background-image: url("/Test 1/images/banner.jpg");
+    width: 100%; 
+    position: relative; 
+    display: inline-block;
+  }
+
+
+  .change{
+    width: 100%;
+    height: auto; 
+   
+}
+@media(max-width: 768px){
+    .change{
+        width: 100%; 
+        height: 700px; 
+       
+    }
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+   
+        width: auto; 
+        height: 300px; 
+      
+  }
+
+  @media(max-width: 768px){
+    .overlay-image {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: 1;
+       
+            width: auto;
+            height: 300px; 
+            margin-right: 100px;
+      }
+ } 
+
+  .overlay-text{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 1; 
+   margin-top: 20%;
+        width: auto;
+        height: 300px; 
+  }
+
+  .img-container3 img {
+    width: auto; 
+    height: 300px; 
+    position: absolute; 
+    top: 50%; 
+    left: 70%;
+    transform: translate(-50%, -20%); 
+    max-width: 100%; 
+    max-height: 100%;
+  
+}
+
+.img-container4 img{
+    width: 100%;
+}
+
+
+
+.img-container5 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  
+}
+  
+  .img-container5 img {
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 10px;
+    box-sizing: border-box;
+  }
+  @media(max-width: 768px){
+    .img-container5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ } 
+  
+
+.color{
+background-color: rgb(26, 24, 24);
+  }
+
+  .input-row input{
+    
+margin-left: 100px;
+margin-bottom: 80px;
+  }
+
+  .background-image-div {
+    background-image: url("/Test 1/images/footer-bg.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .heading{
+    color: #f0f0f0;
+  }
+ @media(max-width: 768px){
+    .heading{
+        margin-right: 10%;
+        color: #f0f0f0;
+      }
+ } 
+
+  .para{
+    color: #f0f0f0;
+  }
+  @media(max-width: 768px){
+    .para{
+        color: #f0f0f0;
+        margin-right: 5%;
+      }
+ } 
+
+
+  .heading-box{
+
+    margin-right: 30%;
+  }
+
+  .para-box{
+    margin-right: 30%;
+  }
+
+  .heading2{
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
+  }
+
+.email{
+    margin-left: 60%;
+    margin-top: 10%;
+}
+@media (max-width: 768px) {
+    .email{
+     margin-top: 30%;
+     /* margin-right: 300px; */
+}
+}
+.icon{
+    margin-left: 150px;
+    /* margin-top: 10%; */
+}
+
+
+
+
+
+
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.active .menu {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
